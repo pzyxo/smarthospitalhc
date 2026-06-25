@@ -68,7 +68,7 @@ DEPT_INFO = {
 
 st.markdown("""
 <div style="padding: 3rem 2rem 2.5rem;margin: -1rem 2rem; text-align:center;">
-  <div style="font-size:14px; color:blue;text-transform:uppercase;margin-bottom:12px;">
+  <div style="font-size:14px; color:white;text-transform:uppercase;margin-bottom:12px;">
   Future Classroom : Machine Learning
   <br>
   Smart Hospital by Roy
