@@ -79,11 +79,30 @@ st.markdown("""
 with st.form("triage_form"):
 
   st.markdown("""
-  <div style="background-color: grey;border: 1px solid blue;border-radius: 10%; padding: 20px 24px; margin-bottom:20px;">
+  <div style="background-color: grey;border: 1px solid blue;border-radius: 10px; padding: 20px 24px; margin-bottom:20px;">
     <div style="display:flex;align-items:center;gap:10px;margin-bottom:4px;">
-      <span style="background-color:wheat;color:black;border-radius:10%;">
-      What are your main symptoms></span>
+      <span style="color:black;">What are your main symptoms></span>
       <span style="color:white">Select all that apply</span>
     </div>
   </div>
   """, unsafe_allow_html=True)
+
+  c1, c2, c3, c4 = st.columns(4)
+  with c1:
+      fever            = st.checkbox("🌡️  Fever")
+      cough            = st.checkbox("🤧  Cough")
+  with c2:
+      headache         = st.checkbox("🤕  Headache")
+      chest_pain       = st.checkbox("💔  Chest Pain")
+  with c3:
+      stomach_pain     = st.checkbox("🤢  Stomach Pain")
+      shortness_breath = st.checkbox("😮‍💨  Shortness of Breath")
+  with c4:
+      nausea_vomiting  = st.checkbox("🤮  Nausea / Vomiting")
+      dizziness        = st.checkbox("😵  Dizziness")
+
+  c5, _, _, _ = st.columns(4)
+  with c5:
+      skin_rash = st.checkbox("🔴  Skin Rash")
+
+  st.markdown("<br>", unsafe_allow_html=True)
