@@ -107,7 +107,7 @@ with st.form("triage_form"):
 
   st.markdown("<br>", unsafe_allow_html=True)
 
-st.markdown("""
+  st.markdown("""
     <div style="background:#fdf4ff;border:1px solid #e9d5ff;border-radius:14px;
                 padding:20px 24px;margin-bottom:20px;">
         <div style="display:flex;align-items:center;gap:10px;">
